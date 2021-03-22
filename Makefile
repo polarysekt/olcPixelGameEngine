@@ -7,3 +7,9 @@ all: _vfydir
 _vfydir:
 	@echo "+ VERIFY build/ folder"
 	@mkdir -p build/
+
+clean:
+	@echo "- REMOVE symlink"
+	@rm -f olcExampleProgram
+	@echo "- REMOVE build/ folder"
+	@rm -fr build/
